@@ -4,12 +4,12 @@ public class Fruit
 {
     private int numberOfFruit;
 
-    public int getNumberOfFruit() {
-        return numberOfFruit;
+    public Fruit(int numberOfFruit){
+        this.numberOfFruit = numberOfFruit;
     }
 
-    public void setNumberOfFruit(int numberOfFruit){
-        this.numberOfFruit = numberOfFruit;
+    public int getNumberOfFruit() {
+        return numberOfFruit;
     }
 
 }

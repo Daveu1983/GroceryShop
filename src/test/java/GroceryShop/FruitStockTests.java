@@ -10,9 +10,7 @@ public class FruitStockTests
     @Test
     public void checkFruitIsInStock()
     {
-        Fruit fruit = new Fruit();
-        
-        fruit.setNumberOfFruit(1);
+        Fruit fruit = new Fruit(1);
 
         int numberOfFruitInStock = fruit.getNumberOfFruit();
 
@@ -24,13 +22,21 @@ public class FruitStockTests
     {
         int controlFruit = 5;
 
-        Fruit fruit = new Fruit();
-
-        fruit.setNumberOfFruit(5);
+        Fruit fruit = new Fruit(5);
 
         int numberOfFruitInStock = fruit.getNumberOfFruit();
 
         assertEquals(controlFruit, numberOfFruitInStock);
 
+    }
+
+    @Test
+    public void stockTakeDoneBeforeStockChecked()
+    {
+        Fruit fruit = new Fruit(5);
+
+        int numberOfFruitInStock = fruit.getNumberOfFruit();
+
+        assertTrue( numberOfFruitInStock > 0 );
     }
 }
