@@ -4,9 +4,18 @@ public class Fruit
 {
     private int numberOfFruit;
     private double priceOfFruit = 1.99;
+    private double fruitProfit = 0.09;
 
     public Fruit(int numberOfFruit) {
         this.numberOfFruit = numberOfFruit;
+    }
+
+    public double getFruitProfit() {
+        return fruitProfit;
+    }
+
+    public void setFruitProfit(double fruitProfit) {
+        this.fruitProfit = fruitProfit;
     }
 
     public double getPriceOfFruit() {

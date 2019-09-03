@@ -42,4 +42,17 @@ public class FruitStockTests
         assertTrue(controlPrice == priceOfFruit);
 
     }
+
+    @Test
+    public void checkFruitProfit()
+    {
+        double controlProfit = 0.09;
+
+        Fruit fruit = new Fruit(5);
+
+        double fruitProfit = fruit.getFruitProfit();
+
+        assertTrue(controlProfit == fruitProfit);
+
+    }
 }
