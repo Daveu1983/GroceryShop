@@ -30,13 +30,5 @@ public class FruitStockTests
 
     }
 
-    @Test
-    public void stockTakeDoneBeforeStockChecked()
-    {
-        Fruit fruit = new Fruit(5);
 
-        int numberOfFruitInStock = fruit.getNumberOfFruit();
-
-        assertTrue( numberOfFruitInStock > 0 );
-    }
 }
